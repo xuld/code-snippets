@@ -1,0 +1,23 @@
+{
+    "editor.fontFamily": "Consolas, 'Courier New', '微软雅黑', monospace",
+    "files.exclude": {
+        "**/*.map": {
+            "when": "$(basename)"
+        },
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.sln*": true,
+        ".vs*": true
+    },
+    "files.watcherExclude": {
+        "**/node_modules/**": true
+    },
+    "editor.fontSize": 16,
+    "window.zoomLevel": 0,
+    "editor.wrappingColumn": 0,
+    "editor.wrappingIndent": "indent",
+    "code-runner.executorMapByFileExtension": {
+        ".ts": "node -r \"typescript-require\" "
+    }
+}

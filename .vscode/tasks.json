@@ -1,0 +1,56 @@
+{
+    "version": "0.1.0",
+    "linux": {
+        "command": "sh",
+        "args": [
+            "-c"
+        ]
+    },
+    "osx": {
+        "command": "sh",
+        "args": [
+            "-c"
+        ]
+    },
+    "windows": {
+        "command": "cmd",
+        "args": [
+            "/C"
+        ]
+    },
+    "tasks": [
+        {
+            "taskName": "tsc -p tsconfig.json && mocha",
+            "isBuildCommand": true,
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "tsc -p tsconfig.json -w",
+            "isWatching": true,
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "mocha",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "tslint **/*.ts",
+            "isTestCommand": true,
+            "problemMatcher": {
+                "owner": "tslint",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "severity": "warning",
+                "pattern": {
+                    "regexp": "^(\\S.*)\\[(\\d+), (\\d+)\\]:\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "message": 4
+                }
+            }
+        }
+    ]
+}

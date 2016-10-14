@@ -1,0 +1,68 @@
+[
+    {
+        "key": "ctrl+q",
+        "command": "editor.action.format",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "editor.action.addSelectionToNextFindMatch"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "editor.action.rename"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "editor.action.findReferences",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+ctrl+w",
+        "command": "editor.unfold"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "editor.foldLevel1"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "editor.foldLevel2"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "editor.foldLevel3"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "editor.foldLevel4"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "editor.foldLevel5"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.tasks.test"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "code-runner.run"
+    }
+]

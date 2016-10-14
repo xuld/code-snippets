@@ -1,0 +1,150 @@
+{
+	"returns": {
+		"prefix": "r",
+		"body": [
+			"return ${1:result};"
+		],
+		"description": "return result;"
+	},
+	"this.": {
+		"prefix": "t",
+		"body": [
+			"this."
+		],
+		"description": "this."
+	},
+	"region": {
+		"prefix": "reg",
+		"body": [
+			"",
+			"// #region $1",
+			"",
+			"",
+			"",
+			"// #endregion",
+			""
+		],
+		"description": "#region"
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+			"for (let i = 0; i < ${1:arr}.length; i++) {",
+			"	$2",
+			"}"
+		],
+		"description": "for 循环"
+	},
+	"forof": {
+		"prefix": "forof",
+		"body": [
+			"for (const ${2:value} of ${1:obj}) {",
+			"	$3",
+			"}"
+		],
+		"description": "for 循环"
+	},
+	"map": {
+		"prefix": "map",
+		"body": [
+			"{ [key: string]: ${1:any}; }"
+		],
+		"description": "{ [key: string]: any }"
+	},
+	"console.log": {
+		"prefix": "c",
+		"body": [
+			"console.log(${1:\"test\"});",
+			"$2"
+		],
+		"description": "console.log(\"test\");"
+	},
+	"alert": {
+		"prefix": "a",
+		"body": [
+			"alert(${1:\"test\"});",
+			"$2"
+		],
+		"description": "alert(\"test\");"
+	},
+	"proto": {
+		"prefix": "__",
+		"body": [
+			"__proto__"
+		],
+		"description": "__proto__"
+	},
+	"defineGetter": {
+		"prefix": "__",
+		"body": [
+			"__defineGetter__"
+		],
+		"description": "__defineGetter__"
+	},
+	"defineSetter": {
+		"prefix": "__",
+		"body": [
+			"__defineSetter__"
+		],
+		"description": "__defineSetter__"
+	},
+	"JsDoc - re": {
+		"prefix": "rg",
+		"body": [
+			"@returns 如果${1:满足条件}则返回 true，否则返回 false。"
+		],
+		"description": "如果满足条件则返回 true，否则返回 false"
+	},
+	"JsDoc - fh": {
+		"prefix": "fh",
+		"body": [
+			"@returns 返回$1。"
+		],
+		"description": "@returns 返回"
+	},
+	"JsDoc - hq": {
+		"prefix": "hq",
+		"body": [
+			"获取当前${1:对象}的${2:属性}。"
+		],
+		"description": "获取或设置当前对象的属性。"
+	},
+	"JsDoc - hqh": {
+		"prefix": "hqh",
+		"body": [
+			"获取或设置当前${1:对象}的${2:属性}。"
+		],
+		"description": "获取或设置当前对象的属性。"
+	},
+	"JsDoc - pd": {
+		"prefix": "pd",
+		"body": [
+			"判断当前${1:对象}是否${2:满足条件}。"
+		],
+		"description": "判断或设置当前当前对象是否满足条件。"
+	},
+	"JsDoc - pdh": {
+		"prefix": "pdh",
+		"body": [
+			"判断或设置当前${1:对象}是否${2:满足条件}。"
+		],
+		"description": "判断或设置当前当前对象是否满足条件。"
+	},
+	"JsDoc - bs": {
+		"prefix": "bs",
+		"body": [
+			"表示一个${1:对象}。"
+		],
+		"description": "表示一个对象。"
+	},
+	"JsDoc - hd": {
+		"prefix": "hd",
+		"body": [
+			"/**",
+			" * @fileOverview ${1}",
+			" * @author xuld@vip.qq.com",
+			" */"
+		],
+		"description": "/** @fileOverview ... */"
+	}
+}
