@@ -1,23 +1,23 @@
 {
-    "editor.fontFamily": "Consolas, 'Courier New', '微软雅黑', monospace",
+    "editor.fontFamily": "Consolas, '微软雅黑', 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.wrappingColumn": 0,
+    "editor.wordWrap": true,
+    "editor.wrappingIndent": "indent",
+    "editor.formatOnType": true,
+    "editor.stablePeek": true,
     "files.exclude": {
         "**/*.map": {
             "when": "$(basename)"
-        },
-        "**/*.js": {
-            "when": "$(basename).ts"
-        },
-        "**/*.sln*": true,
-        ".vs*": true
+        }
     },
     "files.watcherExclude": {
         "**/node_modules/**": true
     },
-    "editor.fontSize": 16,
+    "window.reopenFolders": "all",
+    "telemetry.enableTelemetry": false,
     "window.zoomLevel": 0,
-    "editor.wrappingColumn": 0,
-    "editor.wrappingIndent": "indent",
-    "code-runner.executorMapByFileExtension": {
-        ".ts": "node -r \"typescript-require\" "
-    }
+    "workbench.sideBar.location": "left",
+    "workbench.statusBar.visible": true,
+    "typescript.check.tscVersion": false
 }

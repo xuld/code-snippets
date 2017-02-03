@@ -1,14 +1,11 @@
-# 本项目专用
-_*
-
-# NodeJS 项目通用
+# NodeJS
 
 ## Node
 .node_repl_history
 pids
 *.pid
-*.seed
 *.pid.lock
+*.seed
 
 ## NPM
 node_modules
@@ -27,7 +24,9 @@ coverage
 # 项目通用
 
 ## 生成文件
-_build
+_*
+*.patch
+*.diff
 
 ## 临时文件
 *.tmp
@@ -35,9 +34,34 @@ _build
 *~
 ._*
 
-## 比较文件
-*.patch
-*.diff
+# IDE
+
+## Sublime
+*.sublime-workspace
+
+## Dreamweaver
+_notes
+
+## Webstorm
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dataSources*
+.idea/libraries/
+*.iws
+
+## Visual Studio
+.ntvs_analysis.dat
+**/[Bb]in/Microsoft.NodejsTools.WebRole.dll
+**/[Bb]in/[Dd]ebug/
+**/[Bb]in/[Rr]elease/
+[Oo]bj/
+.vs
+*.sln.*
+*.vshost.*
+*.suo
+*.user
+_ReSharper*
+*.ReSharper
 
 # 操作系统
 
@@ -50,81 +74,3 @@ Thumbs.db
 
 ## OSX
 .DS_Store
-
-# IDE
-
-## Sublime
-*.sublime-workspace
-
-## Dreamweaver
-_notes
-
-## WebStorm
-WebWorkbench.mswwsettings
-.settings
-*.idea
-
-## Visual Studio
-.vs
-obj
-ipch
-*.sln.*
-*.vshost.*
-*.suo
-*.user
-*.ilk
-*.meta
-*.obj
-*.pch
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp_proj
-*_i.c
-*_p.c
-*.vspscc
-*.vssscc
-*.pidb
-*.scc
-csx
-*.build.csdef
-*.aps
-*.ncb
-*.cachefile
-*.psess
-*.vsp
-*.vspx
-*.gpState
-_TeamCity*
-
-## Visual Studio - 测试框架
-TestResults
-BuildLog.*
-*.VisualState.xml
-TestResult.xml
-_Chutzpah*
-
-## Visual Studio - 数据库
-*.opensdf
-*.sdf
-
-## Visual Studio - Node 插件
-.ntvs_analysis.dat
-Microsoft.NodejsTools.WebRole.dll
-
-## Visual Studio - Sandcastle 插件
-DocProject
-
-## Visual Studio - ReSharper 插件
-*.dotCover
-_ReSharper*/
-*.ReSharper
-
-## Visual Studio - NCrunch 插件
-*.ncrunch*
-.*crunch*.local.xml

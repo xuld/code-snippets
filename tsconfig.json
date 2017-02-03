@@ -1,5 +1,4 @@
 {
-    "compileOnSave": true,
     "compilerOptions": {
         "module": "commonjs",
         "target": "es2015",
@@ -7,17 +6,16 @@
         "stripInternal": true,
         "rootDir": ".",
         "outDir": "_build",
-        "preserveConstEnums": true,
-        "experimentalDecorators": true,
         "newLine": "LF",
         "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true,
-        "locale": "zh-cn"
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "strictNullChecks": true
     },
     "exclude": [
-        "_*",
-        ".vscode",
         "node_modules",
-        "digo.config.ts"
-    ]
+        ".vscode",
+        "_*"
+    ],
+    "compileOnSave": true
 }
