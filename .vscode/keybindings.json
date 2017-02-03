@@ -1,79 +1,5 @@
 [
     {
-        "key": "shift+ctrl+\\",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "workbench.action.toggleMenuBar"
-    },
-    {
-        "key": "shift+ctrl+m",
-        "command": "workbench.action.toggleStatusbarVisibility"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.quickOpen"
-    },
-    {
-        "key": "shift+ctrl+w",
-        "command": "workbench.action.quickOpenView"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.quickOpenNavigateNext",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "shift+ctrl+w",
-        "command": "workbench.action.quickOpenNavigatePrevious",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "workbench.action.togglePanel"
-    },
-    {
-        "key": "shift+ctrl+p",
-        "command": "workbench.action.quickOpenView"
-    },
-    {
-        "key": "ctrl+left",
-        "command": "workbench.action.navigateBack"
-    },
-    {
-        "key": "ctrl+right",
-        "command": "workbench.action.navigateForward"
-    },
-    {
-        "key": "ctrl+k ctrl+c",
-        "command": "workbench.action.git.input-commit"
-    },
-    {
-        "key": "ctrl+k ctrl+p",
-        "command": "workbench.action.git.sync"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "workbench.action.tasks.runTask"
-    },
-    {
-        "key": "shift+ctrl+t",
-        "command": "workbench.action.tasks.configureTaskRunner"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "workbench.action.tasks.build"
-    },
-    {
-        "key": "shift+ctrl+b",
-        "command": "workbench.action.tasks.terminate"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.tasks.test"
-    },
-    {
         "key": "ctrl+0",
         "command": "editor.unfoldAll",
         "when": "editorTextFocus"
@@ -129,14 +55,20 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+e",
-        "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorTextFocus"
+        "key": "ctrl+left",
+        "command": "workbench.action.navigateBack"
     },
     {
-        "key": "shift+ctrl+e",
-        "command": "editor.action.addSelectionToPreviousFindMatch",
-        "when": "editorTextFocus"
+        "key": "ctrl+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "editor.action.moveLinesUpAction"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "editor.action.moveLinesDownAction"
     },
     {
         "key": "shift+ctrl+left",
@@ -149,17 +81,36 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+q",
-        "command": "editor.action.format",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "shift+ctrl+up",
+        "command": "editor.action.insertCursorAbove"
     },
     {
-        "key": "ctrl+q",
-        "command": "editor.action.format"
+        "key": "shift+ctrl+down",
+        "command": "editor.action.insertCursorBelow"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+ctrl+e",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+j",
         "command": "editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+ctrl+u",
+        "command": "editor.action.transformToLowercase",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -178,6 +129,15 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "ctrl+q",
+        "command": "editor.action.format",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "editor.action.format"
+    },
+    {
         "key": "ctrl+.",
         "command": "editor.action.showSnippets",
         "when": "editorTextFocus"
@@ -186,5 +146,71 @@
         "key": "ctrl+;",
         "command": "editor.action.showSnippets",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+ctrl+\\",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.toggleMenuBar"
+    },
+    {
+        "key": "shift+ctrl+m",
+        "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "shift+ctrl+w",
+        "command": "workbench.action.quickOpenView"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "shift+ctrl+p",
+        "command": "workbench.action.quickOpenView"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "shift+ctrl+w",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "shift+ctrl+t",
+        "command": "workbench.action.tasks.configureTaskRunner"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.tasks.build"
+    },
+    {
+        "key": "shift+ctrl+b",
+        "command": "workbench.action.tasks.terminate"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.tasks.test"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "workbench.action.git.input-commit"
+    },
+    {
+        "key": "ctrl+k ctrl+p",
+        "command": "workbench.action.git.sync"
     }
 ]
