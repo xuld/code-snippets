@@ -3,7 +3,7 @@ VSCode 推荐技能
 
 快捷键
 ---------------------------------------------
-1. 打开文件/首选项/键盘快捷方式（Mac 上是 Code/首选项/键盘快捷方式)
+1. 打开文件(Mac 上是 Code)/首选项/键盘快捷方式。
 2. 复制 [.vscode/keybindings.json](.vscode/keybindings.json) 的内容到**右边**窗口，保存生效。
 
 这个文件定义了以下快捷键：
@@ -76,3 +76,20 @@ VSCode 推荐技能
 - `ctrl+6`
 - `ctrl+7`
 - `ctrl+8`
+
+代码片段
+---------------------------------------------
+1. 打开文件(Mac 上是 Code)/首选项/用户代码片段/TypeScript。
+2. 复制 [.vscode/snippets/typescript.json](.vscode/snippets/typescript.json)，保存生效。
+
+该片段主要插入了以下内容：
+
+- 输入 `a` 回车 -> `alert("test")`
+- 输入 `c` 回车 -> `console.log("test")`
+- 输入 `t` 回车 -> `this.`
+- 输入 `r` 回车 -> `return result;`
+- 输入 `f` 回车 -> `for(let i = 0; i < arr.length; i++) {}`
+- 输入 `forof` 回车 -> `for (const item of arr) {}`
+- 输入 `i` 回车 -> `if (val) {}`
+- 输入 `reg` 回车 -> `#region`
+- 输入 `hd` 回车 -> `/** @file ... */`
