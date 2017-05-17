@@ -1,0 +1,7 @@
+﻿.url-1 {
+    background: url(image/favicon.ico);
+}
+
+.url-2 {
+    background: url(image/favicon.ico?$INLINE);
+}

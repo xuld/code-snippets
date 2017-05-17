@@ -1,0 +1,9 @@
+﻿
+@import url("import.scss");
+
+.basic {
+    $a: lightgray;
+    color1: $a;
+    color2: lighten($a, 10%);
+    color3: lighten($a, 20%);
+}
